@@ -1,4 +1,5 @@
 /* Create table about the people and what they do here */
+-- All SQL statements are my own. Dummy data was generated using ChatGPT by providing it the Schema I created.
 CREATE TABLE stars (id INTEGER PRIMARY KEY AUTOINCREMENT,
 first_name TEXT,
 last_name TEXT,
