@@ -1,0 +1,27 @@
+CREATE TABLE store(
+    id TEXT PRIMARY KEY,
+    name TEXT,
+    price NUMERIC,
+    color TEXT,
+    maker TEXT
+);
+
+INSERT INTO store VALUES
+('BIKE001', 'Mountain Bike', 500.00, 'Red', 'Trek'),
+('BIKE002', 'Road Bike', 800.00, 'Blue', 'Specialized'),
+('BIKE003', 'Hybrid Bike', 600.00, 'Green', 'Giant'),
+('BIKE004', 'Electric Bike', 1200.00, 'Black', 'Rad Power Bikes'),
+('BIKE005', 'BMX Bike', 300.00, 'Yellow', 'Mongoose'),
+('BIKE006', 'Cruiser Bike', 400.00, 'Purple', 'Firmstrong'),
+('BIKE007', 'Folding Bike', 700.00, 'Silver', 'Dahon'),
+('BIKE008', 'Fixie Bike', 450.00, 'White', 'State Bicycle Co.'),
+('BIKE009', 'Gravel Bike', 900.00, 'Orange', 'Cannondale'),
+('BIKE010', 'Kids Bike', 200.00, 'Pink', 'Schwinn'),
+('BIKE011', 'Touring Bike', 1100.00, 'Gray', 'Surly'),
+('BIKE012', 'Cargo Bike', 1500.00, 'Brown', 'Yuba'),
+('BIKE013', 'Commuter Bike', 750.00, 'Teal', 'Raleigh'),
+('BIKE014', 'Fat Tire Bike', 1000.00, 'Turquoise', 'Salsa'),
+('BIKE015', 'Recumbent Bike', 1700.00, 'Gold', 'HP Velotechnik');
+
+SELECT * FROM store ORDER BY price;
+SELECT AVG(price) FROM store;
